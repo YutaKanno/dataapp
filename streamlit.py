@@ -5,7 +5,8 @@ import plotly.express as px
 import datetime
 import make_score_df
 
-        
+PASSWORD = 'bbc298'
+USERNAME = 'itftkb'
 
 
 # パスワードなどをセッションで保存
@@ -21,9 +22,10 @@ def login():
     login_button = st.button("ログイン")
 
     if login_button:
-        if username == "admin" and password == "password123":
+        if username == USERNAME and password == PASSWORD:
             st.session_state.logged_in = True
             st.success("ログイン成功！")
+            st.write('ボタンをもう一度押してください')
         else:
             st.error("ユーザー名またはパスワードが間違っています")
 
