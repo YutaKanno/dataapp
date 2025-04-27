@@ -5,8 +5,6 @@ import plotly.express as px
 import datetime
 import make_score_df
 
-PASSWORD = 'bbc298'
-USERNAME = 'itftkb'
 
 
 # パスワードなどをセッションで保存
