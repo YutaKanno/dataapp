@@ -6,6 +6,8 @@ import datetime
 import make_score_df
 
 
+USERNAME = 'itftkb'
+PASSWORD = 'bbc298'
 
 # パスワードなどをセッションで保存
 if 'logged_in' not in st.session_state:
